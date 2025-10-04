@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #A0522D, #8B4513, #D2B48C, #F4E2D8);
+    /* Carpentry tones */
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.navbar {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-bottom: darkgrey 4px solid;
+    border-top: darkgray 4px solid;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+}
+
+.contact-us {
+    padding-right: 60px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links:hover {
+    color: black;
+}
+
+h1 {
+    color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+.homepage-text {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.homepage-images {
+    width: 900px;
+    height: 600px;
+    border: darkgray 4px solid;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.div-img-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-text-1 {
+    margin-top: 170px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.div-text-1-content {
+    color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.text-cutting {
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div-img-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-text-2-content {
+    text-align: center;
+    color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.text-edging {
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div-text-2 {
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.main-content {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.div-img-3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.div-text-3 {
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.div-text-3-content {
+    color: gold;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-installation {
+    color: white;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    border-bottom: 4px darkgray solid;
+    border-top: 4px darkgray solid;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 30px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .homepage-text,
+    .text-cutting,
+    .text-edging,
+    .text-installation {
+        font-size: 22px;
+    }
+
+    .homepage-images {
+        width: 100%;
+        height: auto;
+    }
+
+    .div-text-1-content,
+    .div-text-2-content,
+    .div-text-3-content {
+        font-size: 32px;
+    }
+}
+
+/* Phones (up to 767px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .homepage-text,
+    .text-cutting,
+    .text-edging,
+    .text-installation {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .homepage-images {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .div-text-1-content,
+    .div-text-2-content,
+    .div-text-3-content {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .div-text-1,
+    .div-text-2,
+    .div-text-3,
+    .main-content {
+        margin: 20px 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        /* Center horizontally */
+        text-align: center;
+    }
+    
+    .navbar h2 {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        height: auto;
+        padding: 10px;
+    }
+}
